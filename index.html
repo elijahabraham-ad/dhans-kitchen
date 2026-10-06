@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dhan's Kitchen | Authentic Trinidadian Food in Fayetteville, NC</title>
+<meta name="description" content="Authentic Trinidadian food in Fayetteville, NC. Doubles, roti, curry goat, brown stew oxtail, pelau and weekend street food at 432 Chatham St. Order ahead: 910-263-8591.">
+<meta property="og:title" content="Dhan's Kitchen | Authentic Trinidadian Food in Fayetteville, NC">
+<meta property="og:description" content="Doubles, roti, curry goat, oxtail and pelau, made from scratch. 432 Chatham St, Fayetteville.">
+<meta property="og:image" content="img/curry-goat-oxtail.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍛</text></svg>">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Dhan's Kitchen","alternateName":"Dhan's Kitchen on the Go","servesCuisine":["Trinidadian","Caribbean"],"telephone":"+1-910-263-8591","address":{"@type":"PostalAddress","streetAddress":"432 Chatham St","addressLocality":"Fayetteville","addressRegion":"NC","postalCode":"28301","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"18:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"178"},"sameAs":["https://www.facebook.com/dhanskitchen"],"image":"img/curry-goat-oxtail.jpg"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c8102e; --red-deep:#8e0b20; --gold:#f6b40e; --gold-soft:#ffd76a;
+  --ink:#141010; --char:#1f1a18; --cream:#fff8ec; --paper:#fffdf8; --muted:#6f625a;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:50;background:rgba(20,16,16,.92);backdrop-filter:blur(10px);color:#fff}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-family:Pacifico,cursive;font-size:24px;color:var(--gold);text-decoration:none;white-space:nowrap}
+.logo span{color:#fff}
+.nav{display:flex;gap:22px;font-weight:600;font-size:14px}
+.nav a{text-decoration:none;opacity:.85}
+.nav a:hover{opacity:1;color:var(--gold)}
+.callbtn{background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:10px 16px;border-radius:999px;white-space:nowrap}
+@media(max-width:820px){.nav{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url(img/curry-goat-oxtail.jpg) center/cover;transform:scale(1.04)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.35) 40%,rgba(20,8,8,.92) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:64px;padding-top:120px}
+.flag{display:inline-flex;align-items:center;gap:10px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.flag i{display:inline-block;width:26px;height:16px;border-radius:3px;background:linear-gradient(135deg,var(--red) 0 38%,#fff 38% 44%,#000 44% 56%,#fff 56% 62%,var(--red) 62%)}
+.hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(54px,11vw,128px);line-height:.92;margin:18px 0 14px;letter-spacing:.01em;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:clamp(17px,2.2vw,21px);max-width:620px;opacity:.95}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:20px;font-weight:700;font-size:15px}
+.dot{width:10px;height:10px;border-radius:50%;background:#2ecc71;box-shadow:0 0 0 4px rgba(46,204,113,.25)}
+.dot.closed{background:#e74c3c;box-shadow:0 0 0 4px rgba(231,76,60,.25)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;padding:15px 22px;border-radius:14px;font-size:16px;border:0;cursor:pointer}
+.btn.red{background:var(--red);color:#fff}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
+
+/* strip */
+.strip{background:var(--gold);color:var(--ink);font-family:Anton,sans-serif;text-transform:uppercase;font-size:22px;overflow:hidden;white-space:nowrap;border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
+.strip div{display:inline-block;padding:12px 0;animation:roll 28s linear infinite}
+.strip span{margin:0 22px}
+.strip b{color:var(--red);font-weight:400}
+@keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.strip div{animation:none}}
+
+section{padding:84px 0}
+.kicker{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:13px}
+h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(38px,6vw,64px);line-height:1;margin:10px 0 16px}
+.sub{color:var(--muted);max-width:640px;font-size:17px}
+
+/* specials */
+.specials{background:var(--char);color:#fff}
+.specials .sub{color:#d9cfc7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:900px){.cards{grid-template-columns:1fr}}
+.card{background:#2a2321;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.card img{width:100%;height:230px;object-fit:cover}
+.card .in{padding:20px}
+.tag{display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;font-size:12px;padding:5px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
+.tag.red{background:var(--red);color:#fff}
+.card h3{font-family:Anton,sans-serif;font-weight:400;font-size:30px;text-transform:uppercase;margin:10px 0 6px;letter-spacing:.01em}
+.card p{color:#d9cfc7;font-size:15px}
+
+/* menu */
+.menu-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.tabs button{border:2px solid var(--ink);background:transparent;padding:9px 16px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit}
+.tabs button.on{background:var(--ink);color:#fff}
+.menu-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;margin-top:30px;align-items:start}
+@media(max-width:900px){.menu-grid{grid-template-columns:1fr}}
+.menu-photo{border-radius:var(--radius);overflow:hidden;position:sticky;top:84px;aspect-ratio:4/3;background:#eee}
+.menu-photo img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+@media(max-width:900px){.menu-photo{position:relative;top:0}}
+.list{display:none}
+.list.on{display:block}
+.item{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px dashed #d8cbbd}
+.item h4{font-size:18px;font-weight:800}
+.item p{color:var(--muted);font-size:14.5px;margin-top:2px}
+.price{font-weight:800;color:var(--red);white-space:nowrap}
+.v{display:inline-block;font-size:11px;font-weight:800;background:#e8f6ea;color:#1f7a37;padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:middle}
+.note{margin-top:16px;font-size:13px;color:var(--muted)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px;margin-top:30px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:14px}
+.gal .tall{grid-row:span 2}
+.gal .wide{grid-column:span 2}
+@media(max-width:820px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
+
+/* story */
+.story{background:var(--cream)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:900px){.story-grid{grid-template-columns:1fr}}
+.story img{border-radius:var(--radius);box-shadow:0 20px 50px rgba(0,0,0,.18)}
+blockquote{font-family:Pacifico,cursive;font-size:clamp(20px,2.6vw,26px);color:var(--red-deep);margin:22px 0;line-height:1.5}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.facts div{background:#fff;border-radius:14px;padding:16px;text-align:center;box-shadow:0 2px 0 #eadfce}
+.facts b{display:block;font-family:Anton,sans-serif;font-size:30px;font-weight:400;color:var(--red)}
+.facts span{font-size:13px;color:var(--muted);font-weight:600}
+
+/* reviews */
+.stars{color:var(--gold);font-size:24px;letter-spacing:2px}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+@media(max-width:900px){.rev{grid-template-columns:1fr}}
+.rev div{background:#fff;border:1px solid #eee2d2;border-radius:var(--radius);padding:24px}
+.rev p{font-size:16.5px;margin:10px 0 12px}
+.rev small{color:var(--muted);font-weight:600}
+
+/* visit + catering */
+.visit{background:var(--ink);color:#fff}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+@media(max-width:900px){.visit-grid{grid-template-columns:1fr}}
+.hours{width:100%;border-collapse:collapse;margin-top:16px;font-size:16px}
+.hours td{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.hours td:last-child{text-align:right;font-weight:700}
+.hours tr.today td{color:var(--gold)}
+.map{border-radius:var(--radius);overflow:hidden;min-height:300px;border:0;width:100%;height:100%}
+.apps{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.apps a{background:#2a2321;border:1px solid rgba(255,255,255,.12);padding:11px 16px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px}
+form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:26px;margin-top:40px}
+form h3{font-family:Anton,sans-serif;font-weight:400;font-size:34px;text-transform:uppercase}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #ddd2c4;border-radius:12px;font:inherit;font-size:15px;background:#fffdf9}
+textarea{min-height:90px;margin-top:12px}
+form .btn{margin-top:14px}
+.sent{display:none;margin-top:12px;font-weight:700;color:#1f7a37}
+
+footer{background:#0d0a0a;color:#bfb3aa;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mock{font-size:12px;opacity:.7}
+
+/* mobile sticky order bar */
+.mbar{display:none}
+@media(max-width:700px){
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,16,16,.95)}
+  .mbar a{flex:1;text-align:center;justify-content:center}
+  body{padding-bottom:78px}
+  .callbtn{display:none}
+}
+
+/* interactive add-ons */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.today{background:var(--red);color:#fff;text-align:center;font-weight:800;padding:12px 16px;font-size:15px}
+.today b{color:var(--gold-soft)}
+.order{background:var(--cream)}
+.ogrid{display:grid;grid-template-columns:1.3fr .9fr;gap:28px;margin-top:28px;align-items:start}
+@media(max-width:900px){.ogrid{grid-template-columns:1fr}}
+.oitems{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:600px){.oitems{grid-template-columns:1fr}}
+.oi{background:#fff;border-radius:16px;overflow:hidden;border:2px solid transparent;transition:border-color .2s,transform .2s;position:relative}
+.oi.has{border-color:var(--red);transform:translateY(-2px)}
+.oi img{width:100%;height:140px;object-fit:cover}
+.oi .b{padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.oi h4{font-size:16px;font-weight:800}
+.oi small{color:var(--muted);font-size:12.5px}
+.q{display:flex;align-items:center;gap:8px}
+.q button{width:34px;height:34px;border-radius:50%;border:0;font-size:20px;font-weight:800;cursor:pointer;background:var(--ink);color:#fff}
+.q button.m{background:#e9dfd3;color:var(--ink)}
+.q span{min-width:18px;text-align:center;font-weight:800}
+.oi.off{opacity:.45}
+.oi.off .q{display:none}
+.oi .lock{display:none;position:absolute;top:10px;left:10px;background:var(--ink);color:#fff;font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px}
+.oi.off .lock{display:block}
+.cart{background:var(--ink);color:#fff;border-radius:var(--radius);padding:22px;position:sticky;top:84px}
+.cart h3{font-family:Anton,sans-serif;font-weight:400;font-size:30px;text-transform:uppercase}
+.cart ul{list-style:none;margin:14px 0;min-height:60px}
+.cart li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.cart .empty{color:#bfb3aa;font-size:14px}
+.cart input,.cart select{background:#2a2321;border-color:#3a302d;color:#fff;margin-top:8px}
+.cart .btn{width:100%;justify-content:center;margin-top:12px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:88vh;border-radius:12px}
+.gal img{cursor:zoom-in;transition:transform .3s}
+.gal img:hover{transform:scale(1.02)}
+.crave{margin-top:22px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.crave .out{font-family:Anton,sans-serif;font-size:28px;text-transform:uppercase;color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top">Dhan's <span>Kitchen</span></a>
+    <nav class="nav">
+      <a href="#specials">Specials</a><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#reviews">Reviews</a><a href="#order">Order</a><a href="#visit">Visit</a><a href="#catering">Catering</a>
+    </nav>
+    <a class="callbtn" href="tel:+19102638591">Call 910-263-8591</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="today" id="today">Today at Dhan's...</div>
+<section class="hero" style="padding:0">
+  <div class="bg" role="img" aria-label="Curry goat and brown stew oxtail plates from Dhan's Kitchen"></div>
+  <div class="wrap">
+    <span class="flag"><i></i> Authentic Trinidadian Cuisine</span>
+    <h1>A taste of<br><em>Trinidad</em><br>on Chatham St.</h1>
+    <p class="lead">Doubles, roti, curry goat, brown stew oxtail and pelau, made from scratch by Dhan and her family. Homestyle, authentic, made with love.</p>
+    <div class="status"><span class="dot" id="dot"></span><span id="status">Checking hours...</span></div>
+    <div class="ctas">
+      <a class="btn red" href="tel:+19102638591">Call to order</a>
+      <a class="btn gold" href="#order">Build your order</a>
+      <a class="btn ghost" href="https://maps.google.com/?q=432+Chatham+St,+Fayetteville,+NC+28301" target="_blank" rel="noopener">Directions</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div>
+  <span>Doubles</span><b>★</b><span>Phoulourie</span><b>★</b><span>Aloo Pie</span><b>★</b><span>Bake &amp; Saltfish</span><b>★</b><span>Curry Goat</span><b>★</b><span>Brown Stew Oxtail</span><b>★</b><span>Roti</span><b>★</b><span>Pelau</span><b>★</b><span>Currants Roll</span><b>★</b>
+  <span>Doubles</span><b>★</b><span>Phoulourie</span><b>★</b><span>Aloo Pie</span><b>★</b><span>Bake &amp; Saltfish</span><b>★</b><span>Curry Goat</span><b>★</b><span>Brown Stew Oxtail</span><b>★</b><span>Roti</span><b>★</b><span>Pelau</span><b>★</b><span>Currants Roll</span><b>★</b>
+</div></div>
+
+<section class="specials" id="specials">
+  <div class="wrap">
+    <div class="kicker">This week at Dhan's</div>
+    <h2>Specials worth the drive</h2>
+    <p class="sub">The street food goes fast. Call ahead and pre-order so yours is waiting.</p>
+    <div class="cards">
+      <div class="card">
+        <img src="img/doubles.jpg" alt="Doubles with curried channa and pepper">
+        <div class="in"><span class="tag red">Wednesday</span><h3>Free doubles</h3><p>Get a free doubles with the purchase of any combo. In store and on the delivery apps.</p></div>
+      </div>
+      <div class="card">
+        <img src="img/doubles-phoulourie.jpg" alt="Doubles, phoulourie and aloo pie">
+        <div class="in"><span class="tag">Friday &amp; Saturday</span><h3>Trini street food</h3><p>Doubles, phoulourie, aloo pie and bake &amp; saltfish. Weekends only, while it lasts.</p></div>
+      </div>
+      <div class="card">
+        <img src="img/pelau.jpg" alt="Chicken pelau with coleslaw">
+        <div class="in"><span class="tag">Combo</span><h3>Chicken pelau $16.99</h3><p>Chicken breast pelau with coleslaw and a water or can soda. A full plate of home.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <div><div class="kicker">The menu</div><h2>What's cooking</h2><p class="sub">Vegan and vegetarian options every day. Ask about the weekly specials.</p></div>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="on" data-t="curry" data-img="img/curry-goat-oxtail.jpg">Curry &amp; Stew</button>
+      <button data-t="street" data-img="img/doubles-phoulourie.jpg">Street Food</button>
+      <button data-t="plates" data-img="img/jerk-curry.jpg">Plates &amp; Combos</button>
+      <button data-t="sides" data-img="img/phoulourie-tray.jpg">Sides &amp; Veg</button>
+      <button data-t="sweet" data-img="img/currants-roll.jpg">Sweets &amp; Drinks</button>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-photo"><img id="mimg" src="img/curry-goat-oxtail.jpg" alt="Menu photo"></div>
+      <div>
+        <div class="list on" id="curry">
+          <div class="item"><div><h4>Curry Goat</h4><p>Slow cooked, bone in, Trini curry and green seasoning.</p></div></div>
+          <div class="item"><div><h4>Brown Stew Oxtail</h4><p>Fall off the bone, rich brown stew gravy.</p></div></div>
+          <div class="item"><div><h4>Curry Chicken</h4><p>A customer favorite, served with rice or roti.</p></div></div>
+          <div class="item"><div><h4>Curry Shrimp</h4><p>Shrimp in a bright Trini curry.</p></div></div>
+          <div class="item"><div><h4>Brown Stew Beef</h4><p>Rich flavor, island taste, always fresh.</p></div></div>
+          <div class="item"><div><h4>Curry Channa <span class="v">Vegan</span></h4><p>Curried chickpeas, the heart of a good doubles.</p></div></div>
+        </div>
+        <div class="list" id="street">
+          <div class="item"><div><h4>Doubles <span class="v">Vegan</span></h4><p>Two soft fried bara with curried channa. Our most popular item.</p></div></div>
+          <div class="item"><div><h4>Phoulourie</h4><p>Golden split pea fritters with tamarind sauce. Fri and Sat.</p></div></div>
+          <div class="item"><div><h4>Aloo Pie</h4><p>Fried dough stuffed with seasoned potato. Fri and Sat.</p></div></div>
+          <div class="item"><div><h4>Bake &amp; Saltfish</h4><p>Fried bake loaded with saltfish. Fri and Sat only.</p></div></div>
+          <div class="item"><div><h4>Shrimp Wontons (12)</h4><p>Fried to order. Crispy, savory, irresistible.</p></div></div>
+        </div>
+        <div class="list" id="plates">
+          <div class="item"><div><h4>Chicken Pelau Combo</h4><p>Pelau, coleslaw, and a water or can soda.</p></div><span class="price">$16.99</span></div>
+          <div class="item"><div><h4>Jerk Chicken Combo</h4><p>Medium spicy jerk chicken with sides.</p></div></div>
+          <div class="item"><div><h4>Roti</h4><p>Soft roti wrapped around your choice of curry, with potato and channa.</p></div></div>
+          <div class="item"><div><h4>Mrs. Griffin All Veggie Sampler <span class="v">Veg</span></h4><p>A plate of every veggie side on the line.</p></div></div>
+        </div>
+        <div class="list" id="sides">
+          <div class="item"><div><h4>Coconut Bake</h4><p>Limited daily.</p></div></div>
+          <div class="item"><div><h4>Bigan Choka <span class="v">Vegan</span></h4><p>Roasted eggplant, garlic and pepper.</p></div></div>
+          <div class="item"><div><h4>Dhal <span class="v">Vegan</span></h4><p>Yellow split pea dhal.</p></div></div>
+          <div class="item"><div><h4>Pumpkin <span class="v">Vegan</span></h4><p>Sweet curried pumpkin.</p></div></div>
+          <div class="item"><div><h4>Corn Soup</h4><p>"Super amazing," say the regulars.</p></div></div>
+        </div>
+        <div class="list" id="sweet">
+          <div class="item"><div><h4>Currants Roll</h4><p>Flaky pastry rolled with sweet currants. Get it while it lasts.</p></div></div>
+          <div class="item"><div><h4>Kurma</h4><p>Crunchy, sugar-glazed Trini snack.</p></div></div>
+          <div class="item"><div><h4>Pone</h4><p>Cassava pone, dense and sweet.</p></div></div>
+          <div class="item"><div><h4>Shandy Sorrel &amp; Shandy Ginger</h4><p>Back in stock.</p></div></div>
+        </div>
+        <p class="note">Call 910-263-8591 for today's prices and what's still on the line.</p>
+      </div>
+    </div>
+
+    <div class="gal">
+      <img class="tall" src="img/phoulourie-tray.jpg" alt="Tray of phoulourie and bake">
+      <img class="wide" src="img/curry-goat-oxtail.jpg" alt="Curry goat and oxtail">
+      <img src="img/wontons.jpg" alt="Shrimp wontons">
+      <img class="tall" src="img/jerk-curry.jpg" alt="Jerk and curry plates">
+      <img src="img/currants-roll.jpg" alt="Currants roll">
+      <img class="wide" src="img/doubles-phoulourie.jpg" alt="Doubles, phoulourie and aloo pie">
+      <img src="img/pelau.jpg" alt="Chicken pelau">
+    </div>
+  </div>
+</section>
+
+
+<section class="order" id="order">
+  <div class="wrap">
+    <div class="kicker">Order ahead</div>
+    <h2>Build your order</h2>
+    <p class="sub">Tap what you want, then send it straight to Dhan's Kitchen by text. It'll be ready when you pull up. Weekend street food unlocks on Friday and Saturday.</p>
+    <div class="ogrid">
+      <div class="oitems" id="oitems"></div>
+      <aside class="cart">
+        <h3>Your order</h3>
+        <ul id="cartlist"><li class="empty">Nothing yet. Tap + on something good.</li></ul>
+        <input id="oname" placeholder="Your name">
+        <select id="otime"><option>Pick up ASAP</option><option>In 30 minutes</option><option>In 1 hour</option><option>Later today</option></select>
+        <a class="btn gold" id="sendtxt" href="#">Text my order</a>
+        <a class="btn red" href="tel:+19102638591">Or call 910-263-8591</a>
+        <p style="color:#bfb3aa;font-size:12px;margin-top:10px">Opens a text to Dhan's Kitchen with your order filled in. We'll text back to confirm.</p>
+      </aside>
+    </div>
+    <div class="crave"><button class="btn red" id="craveBtn" type="button">Can't decide? Pick for me</button><span class="out" id="craveOut"></span></div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <img src="img/team.jpg" alt="The Dhan's Kitchen family at the counter">
+    <div>
+      <div class="kicker">Our story</div>
+      <h2>From Trinidad, to New York, to Fayetteville</h2>
+      <p class="sub">Dhan and her husband came from Trinidad, spent about ten years in New York, and made Fayetteville home in 2011. They started with a food truck in 2016, opened their first restaurant, and now cook every plate on Chatham Street with their children and grandchildren beside them. They still drive to New York every few months to bring back the real ingredients.</p>
+      <blockquote>"I like to cook. I like to eat. I like to feed people, and it's a pleasure when they enjoy the food."</blockquote>
+      <p style="font-weight:700">Family run. Military friendly. Made fresh daily.</p>
+      <div class="facts">
+        <div><b>2016</b><span>Started on a food truck</span></div>
+        <div><b>4.8★</b><span>From 178 reviews</span></div>
+        <div><b>100%</b><span>Made from scratch</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kicker">Reviews</div>
+    <h2>Like being back on the island</h2>
+    <div class="stars">★★★★★ <span style="color:var(--ink);font-size:17px;font-weight:700;letter-spacing:0">4.8 from 178 reviews</span></div>
+    <div class="rev">
+      <div><span class="stars" style="font-size:18px">★★★★★</span><p>"Amazing food! I used to live in T&amp;T and their food is like being back on the island!"</p><small>Customer review, June 2025</small></div>
+      <div><span class="stars" style="font-size:18px">★★★★★</span><p>"The Corn Soup was super amazing and anything with curry has me!"</p><small>Customer review, Oct 2025</small></div>
+      <div><span class="stars" style="font-size:18px">★★★★★</span><p>"The staff is absolutely welcoming and makes customers feel right at home."</p><small>Customer review</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="visit-grid">
+      <div>
+        <div class="kicker" style="color:var(--gold)">Visit us</div>
+        <h2>432 Chatham St.<br>Fayetteville, NC</h2>
+        <p style="color:#d9cfc7">Open until sold out. Call ahead and we'll have it ready.</p>
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>Monday</td><td>Closed</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>11 AM to 6 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>11 AM to 6 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>11 AM to 6 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>11 AM to 6 PM</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>11 AM to 6 PM</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="apps">
+          <a href="tel:+19102638591">Call 910-263-8591</a>
+          <a href="https://www.doordash.com/search/store/Dhan%27s%20Kitchen%20Fayetteville/" target="_blank" rel="noopener">DoorDash</a>
+          <a href="https://www.ubereats.com/search?q=Dhan%27s%20Kitchen" target="_blank" rel="noopener">Uber Eats</a>
+          <a href="https://www.grubhub.com/search?queryText=Dhan%27s%20Kitchen" target="_blank" rel="noopener">Grubhub</a>
+        </div>
+      </div>
+      <iframe class="map" loading="lazy" title="Map to Dhan's Kitchen" src="https://maps.google.com/maps?q=432%20Chatham%20St%2C%20Fayetteville%2C%20NC%2028301&z=15&output=embed"></iframe>
+    </div>
+
+    <form id="catering">
+      <div class="kicker">Catering &amp; big orders</div>
+      <h3>Feed the whole crew</h3>
+      <p style="color:var(--muted)">Parties, church events, unit functions, office lunches. Tell us the date and headcount and Dhan will get back to you.</p>
+      <div class="row"><input id="cname" required placeholder="Your name"><input id="cphone" required type="tel" placeholder="Phone number"></div>
+      <div class="row"><input id="cdate" type="date" aria-label="Event date"><select id="ccount" aria-label="Headcount"><option>Headcount</option><option>10 to 25</option><option>25 to 50</option><option>50 to 100</option><option>100+</option></select></div>
+      <textarea id="cmsg" placeholder="What would you like? Doubles, curry, pelau, a little of everything..."></textarea>
+      <button class="btn red" type="submit">Request a catering quote</button>
+      <p class="sent" id="sent">Your text is ready to send. Dhan's Kitchen will get back to you.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b style="color:#fff">Dhan's Kitchen on the Go</b><br>432 Chatham St, Fayetteville, NC 28301 · 910-263-8591</div>
+    <div class="mock"><a href="https://www.facebook.com/dhanskitchen" target="_blank" rel="noopener">Facebook</a> · Website by <a href="https://synapse.adovadigital.com" target="_blank" rel="noopener">Adova Synapse</a></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn red" href="tel:+19102638591">Call to order</a>
+  <a class="btn gold" href="https://maps.google.com/?q=432+Chatham+St,+Fayetteville,+NC+28301">Directions</a>
+</div>
+
+<script>
+// menu tabs
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.list').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on');
+  const im=document.getElementById('mimg');im.style.opacity=0;setTimeout(()=>{im.src=b.dataset.img;im.style.opacity=1},200);
+}));
+// open / closed (Eastern time), Tue to Sat 11 to 6
+(function(){
+  const now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
+  const d=now.getDay(),h=now.getHours()+now.getMinutes()/60;
+  const open=d>=2&&d<=6&&h>=11&&h<18;
+  document.getElementById('status').textContent=open?'Open now until 6 PM (or until sold out)':(d>=2&&d<=6&&h<11?'Opens today at 11 AM':'Closed now. Open Tuesday to Saturday, 11 AM to 6 PM');
+  if(!open)document.getElementById('dot').classList.add('closed');
+  const row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+})();
+</script>
+<div class="lb" id="lb"><img id="lbimg" alt=""></div>
+
+<script>
+// today banner
+(function(){
+  const d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).getDay();
+  const t={0:"We're closed Sundays. See you Tuesday at 11 AM.",1:"Closed Mondays. Back Tuesday at 11 AM.",2:"Open today 11 AM to 6 PM. Curry, stew and roti on the line.",3:"<b>Wednesday special:</b> free doubles with any combo!",4:"Open today 11 AM to 6 PM. Call ahead and skip the wait.",5:"<b>Street food Friday:</b> doubles, phoulourie, aloo pie and bake &amp; saltfish!",6:"<b>Saturday street food:</b> doubles, phoulourie, aloo pie and bake &amp; saltfish!"};
+  document.getElementById('today').innerHTML=t[d];
+  window.__day=d;
+})();
+// order builder
+const ITEMS=[
+ {n:"Curry Goat",i:"img/curry-goat-oxtail.jpg",s:"Bone in, slow cooked"},
+ {n:"Brown Stew Oxtail",i:"img/curry-goat-oxtail.jpg",s:"Fall off the bone"},
+ {n:"Chicken Pelau Combo",i:"img/pelau.jpg",s:"$16.99 with coleslaw and a drink"},
+ {n:"Jerk Chicken Combo",i:"img/jerk-curry.jpg",s:"Medium spicy"},
+ {n:"Doubles",i:"img/doubles.jpg",s:"Bara and curried channa",wkend:false},
+ {n:"Shrimp Wontons (12)",i:"img/wontons.jpg",s:"Fried to order"},
+ {n:"Phoulourie",i:"img/phoulourie-tray.jpg",s:"Fri and Sat only",wkend:true},
+ {n:"Aloo Pie",i:"img/doubles-phoulourie.jpg",s:"Fri and Sat only",wkend:true},
+ {n:"Currants Roll",i:"img/currants-roll.jpg",s:"While it lasts"}
+];
+const cart={};const box=document.getElementById('oitems');
+const weekend=window.__day===5||window.__day===6;
+ITEMS.forEach((it,k)=>{
+  const off=it.wkend&&!weekend;
+  const el=document.createElement('div');el.className='oi'+(off?' off':'');
+  el.innerHTML='<span class="lock">Fri &amp; Sat</span><img src="'+it.i+'" alt="'+it.n+'"><div class="b"><div><h4>'+it.n+'</h4><small>'+it.s+'</small></div><div class="q"><button class="m" aria-label="less">-</button><span>0</span><button aria-label="more">+</button></div></div>';
+  const [m,,p]=el.querySelectorAll('.q > *');const sp=el.querySelector('.q span');
+  const upd=v=>{cart[it.n]=Math.max(0,(cart[it.n]||0)+v);sp.textContent=cart[it.n];el.classList.toggle('has',cart[it.n]>0);render();};
+  m.onclick=()=>upd(-1);p.onclick=()=>upd(1);box.appendChild(el);
+});
+function render(){
+  const ul=document.getElementById('cartlist');const rows=Object.entries(cart).filter(([,q])=>q>0);
+  ul.innerHTML=rows.length?rows.map(([n,q])=>'<li><span>'+n+'</span><b>x'+q+'</b></li>').join(''):'<li class="empty">Nothing yet. Tap + on something good.</li>';
+}
+document.getElementById('sendtxt').onclick=e=>{
+  e.preventDefault();const rows=Object.entries(cart).filter(([,q])=>q>0);
+  if(!rows.length){alert('Add something to your order first.');return;}
+  const nm=document.getElementById('oname').value||'a customer';
+  const body='Hi Dhan\'s Kitchen! Order for '+nm+' ('+document.getElementById('otime').value+'):\n'+rows.map(([n,q])=>q+' x '+n).join('\n');
+  location.href='sms:+19102638591?&body='+encodeURIComponent(body);
+};
+// pick for me
+document.getElementById('craveBtn').onclick=()=>{
+  const pool=ITEMS.filter(i=>!(i.wkend&&!weekend));const out=document.getElementById('craveOut');let n=0;
+  const spin=setInterval(()=>{out.textContent=pool[Math.floor(Math.random()*pool.length)].n;if(++n>14){clearInterval(spin);out.textContent+=' it is!';}},90);
+};
+// lightbox
+document.querySelectorAll('.gal img,.card img,.story img').forEach(im=>im.addEventListener('click',()=>{document.getElementById('lbimg').src=im.src;document.getElementById('lb').classList.add('on');}));
+document.getElementById('lb').onclick=()=>document.getElementById('lb').classList.remove('on');
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('section h2,.card,.item,.gal img,.rev > div,.oi,.facts > div,form').forEach(el=>{el.classList.add('reveal');io.observe(el);});
+</script>
+<script>
+document.getElementById('catering').addEventListener('submit',e=>{
+  e.preventDefault();const v=id=>document.getElementById(id).value;
+  const body="Hi Dhan's Kitchen! Catering request from "+v('cname')+" ("+v('cphone')+"). Date: "+(v('cdate')||'TBD')+". Headcount: "+v('ccount')+". "+v('cmsg');
+  document.getElementById('sent').style.display='block';
+  location.href='sms:+19102638591?&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
